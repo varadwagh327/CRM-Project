@@ -14,10 +14,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useAuth } from "@/context/auth-context";
-import { Bell, CircleCheck, Info, X } from "lucide-react";
+import { CircleCheck, Info, X } from "lucide-react";
 import axios from "axios";
-import { MarkAttendanceButton } from "@/components/mark-attendance-button";
-import { toast } from "sonner";
 import TaskTable from "@/components/alpha/tasks";
 
 type Participant = {

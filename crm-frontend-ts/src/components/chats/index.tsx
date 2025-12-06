@@ -29,7 +29,7 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { NewChat } from "./new-chat";
 import { type ChatUser, type Convo } from "./data/chat-types";
 // Fake Data
-import { conversations } from "./data/convo.json";
+import convoData from "./data/convo.json";
 
 export default function Chats() {
   const [search, setSearch] = useState("");
@@ -41,7 +41,7 @@ export default function Chats() {
     useState(false);
 
   // Filtered data based on the search query
-  const filteredChatList = conversations.filter(({ fullName }) =>
+  const filteredChatList = convoData.conversations.filter(({ fullName }: { fullName: string }) =>
     fullName.toLowerCase().includes(search.trim().toLowerCase())
   );
 
@@ -62,7 +62,7 @@ export default function Chats() {
     {}
   );
 
-  const users = conversations.map(({ messages, ...user }) => user);
+  const users = convoData.conversations.map(({ messages, ...user }) => user);
 
   return (
     <>

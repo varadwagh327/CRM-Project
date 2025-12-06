@@ -3,7 +3,7 @@ import Bills from "@/components/billing/bills";
 import BillsTable from "@/components/billing/billsTable";
 import { Main } from "@/components/layout/main";
 import { Separator } from "@/components/ui/separator";
-import axios from "axios";
+// import axios from "axios";
 import React, { useState } from "react";
 
 const BillsPage = () => {
