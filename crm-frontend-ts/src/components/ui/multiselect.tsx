@@ -109,7 +109,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
 
   const [value, setValue] = useControllableState({
     prop: valueProp,
-    defaultProp: defaultValue,
+    defaultProp: defaultValue ?? [],
     onChange: handleValueChange,
   });
 
