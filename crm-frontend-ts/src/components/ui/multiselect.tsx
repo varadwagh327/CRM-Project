@@ -115,7 +115,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
 
   const [open, setOpen] = useControllableState({
     prop: openProp,
-    defaultProp: defaultOpen,
+    defaultProp: defaultOpen ?? false,
     onChange: onOpenChange,
   });
 
