@@ -16,3 +16,4 @@ export interface CreateBillResponse {
   };
   errors: any | null;
 }
+console.log("bills.type.ts");
